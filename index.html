@@ -1,0 +1,386 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Suroj Rana">
+
+    <!-- IMPORTING CUSTOM STYLES. -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ICON. -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Suroj | Profile</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <!-- NAV CONTENTS -->
+        <section class="nav-contents">
+            <!-- NAV TITLE -->
+            <div class="nav-title" onclick="location.reload()">
+
+            </div>
+            <!-- NAV ITEMS -->
+            <div class="nav-items" id="nav-items">
+                <a href="#about">ABOUT</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#awards">AWARDS & CERTIFICATIONS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <!-- HAMBURGER ICON -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <section class="about-contents">
+            <article class="about-description">
+                <div class="profile-header">
+                    <div class="profile-image-container">
+                        <img src="assets/images/suroj.jpg" alt="Suroj Rana" class="profile-image">
+                        <div class="profile-circle"></div>
+                    </div>
+                    <div class="title-container">
+                        <h1 class="glitch-text">Suroj Rana</h1>
+                        <div class="typing-text">
+                            <h3>BCA | WEB | UI/UX</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="fade-in">
+                        A web developer passionate about creating user-friendly web experiences. Skilled in HTML, CSS,
+                        and responsive design, with a strong focus on UI/UX principles and modern tools like Figma.
+                        Experienced in working with web frameworks and collaborating effectively in team environments to
+                        build clean, functional, and visually appealing websites.
+                    </p>
+                    <div class="skills-container">
+                        <h4>Skills</h4>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Responsive Design</span>
+                            <span>Web Frameworks</span>
+                            <span>Collaboration</span>
+                        </div>
+                    </div>
+                    <!-- Add this new resume button -->
+                    <div class="resume-button">
+                        <a href="https://www.figma.com/proto/I9HuPXeR5EgG0TbWJOusrJ/Class-Materials---HSMSS--Community-?node-id=57-9&t=fGvSb28EFdM6c3R5-0&scaling=min-zoom&content-scaling=fixed&page-id=57%3A8"
+                            target="_blank" class="resume-link">
+                            <span>View Resume</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M7 17l9.2-9.2M17 17V7H7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <!-- EXPERIENCE CONTENTS -->
+        <section class="experience-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">EXPERIENCE</h2>
+                <section class="experience-items">
+                    <!-- EXPEIRENCE #1 (SET IN DECENDING ORDER) -->
+                    <div id="exp-1" class="active" onclick="showExp('exp-1-content')">
+                        <h3>DigiPrabhat</h3>
+                        <p>Intern | 2024-08 - 2024-10</p>
+                    </div>
+                    <!-- EXPEIRENCE #2 -->
+                    <div id="exp-2" onclick="showExp('exp-2-content')">
+                        <h3>Hackathon HSMSS</h3>
+                        <p>Third Position | 2024</p>
+                    </div>
+                    <!-- EXPEIRENCE #3 -->
+                    <div id="exp-3" onclick="showExp('exp-3-content')">
+                        <h3>IT Club of HSMSS</h3>
+                        <p>Member | 2023 - Present</p>
+                    </div>
+                    <!-- ADDITIONAL EXPERIENCES THAT WILL BE DISPLAYED WHILE SCROLLING VERTICALLY. -->
+                    <div id="exp-4" onclick="showExp('exp-4-content')">
+                        <h3>Participated in 10 days UI/UX bootcamp</h3>
+                        <p> Received Certificate of Excellence| 2024</p>
+                    </div>
+                    <div id="exp-5" onclick="showExp('exp-5-content')">
+                        <h3>Participated in 5-days Flutter Workshop hosted by IT club </h3>
+                        <p>2024</p>
+                    </div>
+                    </div>
+                    <div id="exp-6" onclick="showExp('exp-5-content')">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum | 202X - Ongoing</p>
+                    </div>
+                    <div id="exp-7" onclick="showExp('exp-5-content')">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum | 202X - Ongoing</p>
+
+                </section>
+            </section>
+            <section id="exp-contents-right">
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #1 -->
+                <div id="exp-1-content">
+                    <h2>DigiPrabhat</h2>
+                    <i>Intern | 2024 - 2024</i>
+                    <hr />
+                    <p>
+                        Served as an intern in UI/UX department.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #2 -->
+                <div id="exp-2-content" style="display: none;">
+                    <h2>Hackathon HSMSS</h2>
+                    <i>3rd Position | 2024</i>
+                    <hr />
+                    <p>
+                        Developed an interactive solution for a smart college problem with team.
+                        <a href="#">Project</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #3 -->
+                <div id="exp-3-content" style="display: none;">
+                    <h2>IT Club of HSMSS</h2>
+                    <i>Member | 2023 - Present</i>
+                    <hr />
+                    <p>
+
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #4 -->
+                <div id="exp-4-content" style="display: none;">
+                    <h2>UI/UX bootcamp</h2>
+                    <i>2024 - 2024</i>
+                    <hr />
+                    <p>
+                        Completed a 10-day UI/UX program and gained hands-on experience with design tools,
+                        user research, and wireframing..
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #5 -->
+                <div id="exp-5-content" style="display: none;">
+                    <h2>Flutter Workshop</h2>
+                    <i>2024 - 2024</i>
+                    <hr />
+                    <p>
+                        Attended a 5-day Flutter workshop and learned basics of app development, UI building, and state
+                        management..
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <!-- PROJECTS CONTENTS. -->
+        <section class="projects-contents">
+            <h2 class="contents-title">PROJECTS</h2>
+            <section class="project-items">
+                <!-- PROJECT #1: SMS -->
+                <div id="project-1">
+                    <h2>SMS</h2>
+                    <blockquote>HTML, CSS, JS | 2024</blockquote>
+                    <p>
+                        A web-based Student Management System (SMS) developed as a team project, performing basic CRUD
+                        operations.
+                    </p>
+                </div>
+
+
+
+                <!-- PROJECT #2: LOREM IPSUM 1 -->
+                <div id="project-2">
+                    <h2>30 Days Python Challenge</h2>
+                    <blockquote>Personal Projects | 2024</blockquote>
+                    <p>
+                        Completed multiple mini-projects as part of a 30-day Python challenge, exploring core concepts
+                        like loops,
+                        functions, file handling, and simple applications.
+                    </p><a href="https://github.com/surojrana69/30Day-Challenge">Link of the projects</a>
+                </div>
+
+
+                </div>
+                <!-- PROJECT #3: GroceryHall -->
+                <div id="project-3">
+                    <h2>Thunderbolt</h2>
+                    <blockquote>UI/UX Project | 2024</blockquote>
+                    <p>
+                        Designed a UI/UX concept named "Thunderbolt" using Figma after completing a 10-day UI/UX
+                        program, focusing on user flow, wireframes, and visual design. Received a Certificate of
+                        Excellence for outstanding performance in the program.
+                    </p> <a
+                        href="https://www.figma.com/proto/7fwjwvMSDOIkyrxpSQCG2g/College-Project?node-id=37-434&p=f&t=QfJi8DHm1aY7VYDE-0&scaling=scale-down&content-scaling=fixed&page-id=14%3A208&starting-point-node-id=42%3A545">Link
+                        of the project</a>
+                </div>
+                <div id="project-4">
+                    <h2>Lorem Ipsum 2</h2>
+                    <blockquote>Lorem Ipsum | 2024</blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+                <div id="project-5">
+                    <h2>Lorem Ipsum 3</h2>
+                    <blockquote>Lorem Ipsum | 2024</blockquote>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                    <p><a href="#">Link</a></p>
+                </div>
+
+
+
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- AWARDS & CERTIFICATIONS -->
+    <section id="awards">
+        <!-- AWARDS CONTENTS -->
+        <section class="awards-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">AWARDS & CERTIFICATIONS</h2>
+                <section class="awards-items">
+                    <!-- AWARDS #1 (SET IN DECENDING ORDER) -->
+                    <div id="awards-1" class="active" onclick="showAwards('awards-1-content')">
+                        <h3>UI/UX Workshop</h3>
+                        <p>HSMSS | 2024</p>
+                    </div>
+                    <!-- AWARDS #2 -->
+                    <div id="awards-2" onclick="showAwards('awards-2-content')">
+                        <h3>UI/UX Bootcamp Project</h3>
+                        <p>HSMSS | 2024</p>
+                    </div>
+
+                    <!-- AWARDS #3 -->
+                    <div id="awards-3" onclick="showAwards('awards-3-content')">
+                        <h3>Gaming Competition (PUBG)</h3>
+                        <p>HSMSS FEST | 2024</p>
+                    </div>
+
+                    <div id="awards-4" onclick="showAwards('awards-4-content')">
+                        <h3>Lorem Ipsum #4</h3>
+                        <p>Lorem Ipsum | 20XX</p>
+                    </div>
+                    <div id="awards-5" onclick="showAwards('awards-5-content')">
+                        <h3>Lorem Ipsum #5</h3>
+                        <p>Lorem Ipsum | 20XX</p>
+                    </div>
+
+                </section>
+            </section>
+            <section id="awards-contents-right">
+                <!-- RESPECTIVE CONTENT OF AWARDS #1 -->
+                <div id="awards-1-content">
+                    <h2>UI/UX Workshop</h2>
+                    <i>HSMSS | 2024</i>
+                    <hr />
+                    <p>
+                        Received a certificate upon completing the 10 days UI/UX course on HSMSS.
+                        <a href="assets/images/Participate.jpg">Certificate</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #2 -->
+                <div id="awards-2-content" style="display: none;">
+                    <h2>UI/UX Bootcamp</h2>
+                    <i>HSMSS | 2024</i>
+                    <hr />
+                    <p>
+                        Participated in a 10-day UI/UX Bootcamp and received a Certificate of Excellence for outstanding
+                        performance.
+                        <a href="assets/images/excellence.jpg">Certificate</a>
+                    </p>
+                </div>
+
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #3 -->
+                <div id="awards-3-content" style="display: none;">
+                    <h2>Gaming Competition (PUBG)</h2>
+                    <i>HSMSS FEST | 2024</i>
+                    <hr />
+                    <p>
+                        Participated in the HSMSS FEST Gaming Competition (PUBG) and secured 1st Runner-Up position.
+                        <a href="assets/images/pubg.jpg">Certificate</a>
+                    </p>
+                </div>
+
+                <div id="awards-4-content" style="display: none;">
+                    <h2>Lorem Ipsum #4</h2>
+                    <i>Lorem Ipsum | 20XX</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #5 -->
+                <div id="awards-5-content" style="display: none;">
+                    <h2>Lorem Ipsum #5</h2>
+                    <i>Lorem Ipsum | 20XX</i>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus nibh, rutrum sit amet dui
+                        nec, mattis tempor nunc.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- FOOTER/CONTACT -->
+    <footer id="contact">
+        <!-- FOOTER/CONTACT CONTENTS -->
+        <section class="contact-contents">
+            <!-- FOOTER/CONTACT LINKS -->
+            <div class="contact-links">
+                <h3>LINKS</h3>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#awards">Awards & Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- FOOTER/CONTACT CONNECT -->
+            <div class="contact-connect">
+                <h3>CONNECT</h3>
+                <a href="https://github.com/surojrana69">Github</a>
+                <a href="https://www.linkedin.com/in/suroj-rana-79bb962a8/">LinkedIn</a>
+            </div>
+            <!-- FOOTER/CONTACT CONTACT -->
+            <div>
+                <h3>CONTACT</h3>
+                <a href="mailto:surojrana2014@gmail.com">Email Me</a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- IMPORTING CUSTOM SCRIPT. -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
+
+
+
+
